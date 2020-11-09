@@ -34,12 +34,10 @@ def Jacobi(A,b,x,epsilon):
     return x,solution
     
     
-
+# example
 a1 = np.float64([[10,-7,0],[0,2.5,5],[0,-0.001,6]])
 b1 = np.float64([7,2.5,6.001])
 
-
-# print do metodo de jacobi
 jaco = Jacobi(a1,b1,[0.5,1.1,1.1],0.0001)
 print('Solution: {}'.format(jaco[0]))
 print('Iterations: {}'.format(jaco[1]))
